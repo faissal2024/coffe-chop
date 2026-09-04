@@ -453,14 +453,97 @@ ul {
     margin-bottom: 0.5rem;
 }
 
-/* Why Choose Us */
-.reasons {
-    list-style: none;
-    padding-left: 0;
+/* About Us */
+.about-section {
+    background: var(--bg);
+    text-align: left;
+    padding: 3rem 2.5rem;
 }
-.reasons li {
-    margin-bottom: 0.6rem;
+.about-inner {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+.about-icon {
+    flex: 0 0 auto;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.4rem;
+    box-shadow: 0 6px 18px rgba(184,92,56,0.25);
+}
+.about-copy {
+    border-left: 3px solid var(--accent);
+    padding-left: 1.8rem;
+}
+.about-copy h2 {
+    color: var(--primary);
+    text-align: left;
+}
+.about-copy p {
+    color: var(--text);
+    line-height: 1.7;
+    margin-bottom: 0.8rem;
+    font-size: 1.05rem;
+}
+.about-copy p:last-child {
+    margin-bottom: 0;
+}
+@media (max-width: 600px) {
+    .about-section { text-align: center; padding: 2rem 1.2rem; }
+    .about-inner { flex-direction: column; }
+    .about-copy { border-left: none; border-top: 3px solid var(--accent); padding-left: 0; padding-top: 1.2rem; text-align: center; }
+    .about-copy h2 { text-align: center; }
+}
+
+/* Why Choose Us */
+.why-section {
+    background: var(--white);
+}
+.why-section h2 {
+    color: var(--primary);
+}
+.reasons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.2rem;
+    text-align: left;
+}
+.reason {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    background: var(--bg);
+    border-radius: 12px;
+    padding: 1rem 1.1rem;
+    box-shadow: 0 2px 8px rgba(184,92,56,0.07);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.reason:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(184,92,56,0.14);
+}
+.reason i {
+    flex: 0 0 auto;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: var(--accent);
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 1.1rem;
+}
+.reason span {
+    font-size: 1.02rem;
+    color: var(--text);
+    font-weight: 500;
 }
 
 /* Testimonials */
@@ -492,14 +575,46 @@ ul {
     font-weight: bold;
 }
 
-/* Offers */
-.offers {
-    list-style: disc inside;
-    margin-left: 1rem;
+/* Offers - cafe specials board */
+.offers-section {
+    background: #2b180c;
+    border: 1px dashed var(--accent);
 }
-.offers li {
-    margin-bottom: 0.7rem;
-    font-size: 1.1rem;
+.offers-section h2 {
+    color: var(--accent);
+}
+.offers {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 1rem;
+    text-align: left;
+}
+.offer {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.8rem;
+    padding: 0.9rem 1rem;
+    border-radius: 10px;
+    background: rgba(247,200,115,0.06);
+    border: 1px solid rgba(247,200,115,0.18);
+}
+.offer i {
+    color: var(--accent);
+    font-size: 1.15rem;
+    margin-top: 0.15rem;
+}
+.offer p {
+    color: #f4e6d8;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+}
+.offer p strong {
+    color: var(--accent);
+}
+.offer-highlight {
+    background: rgba(247,200,115,0.14);
+    border-color: var(--accent);
 }
 
 /* Contact & Reservation */
