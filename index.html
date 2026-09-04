@@ -219,23 +219,35 @@
             </div>
         </section>
     
-    <section id="contact" class="animated fade-in">
+    <section id="contact" class="animated fade-in contact-section">
         <h2>Contact & Location</h2>
-        <div class="contact-details">
-            <p><strong>Phone:</strong> <a href="tel:+1234567890">+1 234 567 890</a></p>
-            <p><strong>Email:</strong> <a href="mailto:info@gourmethaven.com">info@gourmethaven.com</a></p>
-            <p>
-                <strong>Follow us:</strong>
-                <a href="#"><i class="fab fa-instagram"></i></a> |
-                <a href="#"><i class="fab fa-linkedin"></i></a> |
-                <a href="#"><i class="fab fa-whatsapp"></i></a>
-            </p>
+        <div class="contact-grid">
+            <div class="contact-info-card">
+                <div class="contact-row">
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel:+1234567890">+1 234 567 890</a>
+                </div>
+                <div class="contact-row">
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:info@gourmethaven.com">info@gourmethaven.com</a>
+                </div>
+                <div class="contact-row">
+                    <i class="fa-solid fa-clock"></i>
+                    <span>Open daily, 7:00 AM – 8:00 PM</span>
+                </div>
+                <div class="contact-social">
+                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="contact-map">
+                <iframe src="https://www.google.com/maps?q=restaurant+location&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
         </div>
-        <div class="map-reservation">
-            
-            <iframe src="https://www.google.com/maps?q=restaurant+location&output=embed" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="reservation-card">
+            <h3>Book Your Table Easily</h3>
             <form class="reservation-form" onsubmit="event.preventDefault(); alert('Thank you for your reservation!');">
-                <h3>Book Your Table Easily</h3>
                 <input type="text" placeholder="Your Name" required>
                 <input type="email" placeholder="Your Email" required>
                 <input type="tel" placeholder="Phone Number" required>
