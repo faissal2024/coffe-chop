@@ -1,12 +1,12 @@
   /* Base styles and resets */
 :root {
-    --primary: #b85c38;
-    --secondary: #e07a5f;
-    --accent: #f7c873;
+    --primary: #7a4326;
+    --secondary: #c9713f;
+    --accent: #f2b74e;
     --bg: #fff8f0;
     --white: #fff;
     --text: #222;
-    --shadow: 0 4px 24px rgba(184,92,56,0.08);
+    --shadow: 0 4px 24px rgba(122,67,38,0.1);
     --header-h: 76px;
 }
 *{
@@ -83,14 +83,14 @@ nav a:hover, nav a:focus {
     font-weight: bold;
     margin: 0.5rem 0;
     cursor: pointer;
-    box-shadow: 0 2px 8px rgba(184,92,56,0.13);
+    box-shadow: 0 2px 8px rgba(122,67,38,0.13);
     transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
     outline: none;
 }
 .cta-btn:hover, .cta-offer:hover {
     background: linear-gradient(90deg, var(--secondary) 60%, var(--primary) 100%);
     transform: scale(1.06);
-    box-shadow: 0 6px 18px rgba(224,122,95,0.18);
+    box-shadow: 0 6px 18px rgba(201,113,63,0.18);
 }
 .cta-offer {
     padding: 0.3rem 1.2rem;
@@ -187,7 +187,7 @@ nav a:hover, nav a:focus {
 }
 
 .home-title span {
-    color: #c89f76;
+    color: var(--accent);
     font-weight: bold;
 }
 
@@ -215,23 +215,23 @@ nav a:hover, nav a:focus {
     border: none;
     border-radius: 30px;
     cursor: pointer;
-    background-color: #8b5e3c;
+    background-color: var(--primary);
     color: white;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .cta-btn:hover {
-    background-color: #a06c4f;
+    background-color: var(--secondary);
     transform: translateY(-3px);
 }
 
 .cta-secondary {
     background-color: transparent;
-    border: 2px solid #8b5e3c;
+    border: 2px solid var(--primary);
 }
 
 .cta-secondary:hover {
-    background-color: #8b5e3c;
+    background-color: var(--primary);
     color: white;
 }
 
@@ -395,7 +395,7 @@ section h2 {
     flex: 1 1 220px;
     background: var(--bg);
     border-radius: 14px;
-    box-shadow: 0 2px 8px rgba(184,92,56,0.07);
+    box-shadow: 0 2px 8px rgba(122,67,38,0.07);
     padding: 1rem;
     text-align: center;
     transition: transform 0.2s, box-shadow 0.2s;
@@ -405,21 +405,21 @@ section h2 {
 }
 .dish:hover {
     transform: translateY(-8px) scale(1.04);
-    box-shadow: 0 6px 18px rgba(224,122,95,0.13);
+    box-shadow: 0 6px 18px rgba(201,113,63,0.13);
 }
 .dish img {
     width: 100%;
     max-width: 170px;
     border-radius: 12px;
     margin-bottom: 0.7rem;
-    box-shadow: 0 2px 8px rgba(224,122,95,0.09);
+    box-shadow: 0 2px 8px rgba(201,113,63,0.09);
     transition: transform 0.4s cubic-bezier(.4,2,.6,1), box-shadow 0.2s;
     object-fit: cover;
     aspect-ratio: 1/1;
 }
 .dish img:hover {
     transform: scale(1.08) rotate(-2deg);
-    box-shadow: 0 8px 24px rgba(224,122,95,0.18);
+    box-shadow: 0 8px 24px rgba(201,113,63,0.18);
 }
 .dish h3 {
     color: var(--secondary);
@@ -471,7 +471,7 @@ ul {
     align-items: center;
     justify-content: center;
     font-size: 2.4rem;
-    box-shadow: 0 6px 18px rgba(184,92,56,0.25);
+    box-shadow: 0 6px 18px rgba(122,67,38,0.25);
 }
 .about-copy {
     border-left: 3px solid var(--accent);
@@ -517,12 +517,12 @@ ul {
     background: var(--bg);
     border-radius: 12px;
     padding: 1rem 1.1rem;
-    box-shadow: 0 2px 8px rgba(184,92,56,0.07);
+    box-shadow: 0 2px 8px rgba(122,67,38,0.07);
     transition: transform 0.2s, box-shadow 0.2s;
 }
 .reason:hover {
     transform: translateY(-4px);
-    box-shadow: 0 6px 16px rgba(184,92,56,0.14);
+    box-shadow: 0 6px 16px rgba(122,67,38,0.14);
 }
 .reason i {
     flex: 0 0 auto;
@@ -557,11 +557,11 @@ ul {
     font-style: italic;
     flex: 1 1 180px;
     min-width: 180px;
-    box-shadow: 0 2px 8px rgba(224,122,95,0.07);
+    box-shadow: 0 2px 8px rgba(201,113,63,0.07);
     transition: box-shadow 0.2s, transform 0.2s;
 }
 .testimonials blockquote:hover {
-    box-shadow: 0 6px 18px rgba(224,122,95,0.13);
+    box-shadow: 0 6px 18px rgba(201,113,63,0.13);
     transform: scale(1.03);
 }
 .testimonials span {
@@ -632,7 +632,7 @@ ul {
     flex: 1 1 280px;
     background: var(--white);
     border-radius: 14px;
-    box-shadow: 0 2px 8px rgba(184,92,56,0.07);
+    box-shadow: 0 2px 8px rgba(122,67,38,0.07);
     padding: 1.8rem;
     display: flex;
     flex-direction: column;
@@ -695,7 +695,7 @@ ul {
     min-height: 260px;
     border-radius: 14px;
     overflow: hidden;
-    box-shadow: 0 2px 8px rgba(184,92,56,0.07);
+    box-shadow: 0 2px 8px rgba(122,67,38,0.07);
 }
 .contact-map iframe {
     width: 100%;
@@ -709,7 +709,7 @@ ul {
     background: var(--white);
     border-radius: 14px;
     padding: 1.8rem;
-    box-shadow: 0 2px 8px rgba(184,92,56,0.07);
+    box-shadow: 0 2px 8px rgba(122,67,38,0.07);
 }
 .reservation-card h3 {
     color: var(--primary);
@@ -763,7 +763,7 @@ ul {
     max-width: 100%;
     width: 100%;
     text-align: left;
-    border: 1px solid rgba(184,92,56,0.35);
+    border: 1px solid rgba(122,67,38,0.35);
 }
 
 .developer-container {
